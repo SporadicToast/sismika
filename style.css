@@ -137,7 +137,7 @@ h3 {
 }
 /* Earthquake Styles */
 .earthquake {
-  background: linear-gradient(to right, red 20%, #fcfaec 20%);
+  /* background: linear-gradient(to right, red 20%, #fcfaec 20%); */
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: auto auto auto;

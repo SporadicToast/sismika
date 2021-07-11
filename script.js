@@ -13,6 +13,18 @@ const PAR_POLYLINE = [
   [5, 135],
   [5, 115],
 ];
+const INTENSITY_COLORS = [
+  undefined,
+  "86AE59",
+  "C0D731",
+  "FFC20F",
+  "F7941F",
+  "F46F2C",
+  "F0452B",
+  "EA1C29",
+  "D6186E",
+  "A01252",
+];
 //Window Variables
 const cardWindow = document.querySelector(".bottom_index");
 const stationCards = document.getElementById("station_cards");
@@ -183,7 +195,8 @@ class Application {
     element.style.opacity = 1;
     element.style.boxShadow = "15px 15px 5px 199px rgba(255,250,111,1) inset";
     setTimeout(() => {
-      element.removeAttribute("style");
+      element.style.removeProperty("opacity");
+      element.style.removeProperty("box-shadow");
     }, 1000);
   }
   async _drawStationHTML(stationlist) {
@@ -271,11 +284,12 @@ class Application {
 
   _displayQuakesHTML(events) {
     events.forEach(function (current) {
-      const { mag, magType, title, place, tsunami, time, code, url } =
+      const { mag, magType, place, tsunami, time, code, url } =
         current.properties;
+      const magcolor = INTENSITY_COLORS[Math.floor(mag)];
       const [lat, long, depth] = current.geometry.coordinates;
       const html = `              
-      <li class="card earthquake" data-code=${code} data-long='${long}' data-lat='${lat}' data-url='${url}'>
+      <li class="card earthquake" data-code=${code} data-long='${long}' data-lat='${lat}' data-url='${url}' style='background: linear-gradient(to right, #${magcolor} 20%, #fcfaec 20%)'>
       <h1 class="earthquake__magnitude">${mag} ${magType}</h1>
       <h2 class="earthquake__place">${place}</h2>
       <div class=>${
