@@ -47,7 +47,7 @@ h3 {
   float: left;
   position: relative;
   min-width: 300px;
-  height: 90v5;
+  height: 95vh;
   overflow: hidden;
 }
 .map {
@@ -64,7 +64,7 @@ h3 {
 /* Card HTML*/
 .card_display {
   list-style: none;
-  height: 75vh;
+  height: 70vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -179,6 +179,18 @@ h3 {
 .logo {
   align-self: center;
   height: 5.2rem;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: white 5px solid;
+  background-color: #f5f5f5;
+  height: 9vh;
+}
+.smallico {
+  width: 25px;
 }
 button {
   background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
