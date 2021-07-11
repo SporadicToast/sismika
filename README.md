@@ -6,7 +6,7 @@
   <a href='https://sporadictoast.github.io/sismika/'><img src='https://img.shields.io/website-up-down-green-red/http/shields.io.svg'></a>
  </p>
 <h1> sismika - the modern earthquake event visualizer </h1>
-<p> sismika (seismic) is a pure Javascript web applet that integrates locations of <a href='https://www.phivolcs.dost.gov.ph/vault/html/Seismicity%20Maps/2020/Philippines-Seismic-Network-2020-(December)_.jpg'>DOST seismic stations</a> and the <a href='https://earthquake.usgs.gov/fdsnws/event/1/'>USGS public API</a> for the specifically for seismic events inside the Philippine Area of Responsibility </p>
+<p> sismika (seismic) is a pure Javascript web applet that integrates locations of <a href='https://www.phivolcs.dost.gov.ph/vault/html/Seismicity%20Maps/2020/Philippines-Seismic-Network-2020-(December)_.jpg'>DOST seismic stations</a> and the <a href='https://earthquake.usgs.gov/fdsnws/event/1/'>USGS public API</a> specifically for seismic events inside the Philippine Area of Responsibility </p>
 
 <p align='center'>
 <img width='900' src='https://i.imgur.com/aFKKFI1.png'>
