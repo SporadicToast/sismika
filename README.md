@@ -1,5 +1,5 @@
 <p align='center'>
-<img width="600" src='https://i.imgur.com/sB82rat.png'> <br>
+<img width="600" src='https://i.imgur.com/FSRTcmg.png'> <br>
   <img src='https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white'>
   <img src='https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white'>
   <img src='https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black'>
@@ -9,7 +9,7 @@
 <p> sismika (seismic) is a pure Javascript web applet that integrates locations of <a href='https://www.phivolcs.dost.gov.ph/vault/html/Seismicity%20Maps/2020/Philippines-Seismic-Network-2020-(December)_.jpg'>DOST seismic stations</a> and the <a href='https://earthquake.usgs.gov/fdsnws/event/1/'>USGS public API</a> specifically for seismic events inside the Philippine Area of Responsibility </p>
 
 <p align='center'>
-<img width='900' src='https://i.imgur.com/aFKKFI1.png'>
+<img width='900' src='https://i.imgur.com/sB82rat.png'>
 </p>
 <h2>Features</h2>
 <ol>
