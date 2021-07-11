@@ -1,7 +1,4 @@
 "use strict";
-
-// import "leaflet";
-// import "leaflet/dist/leaflet.css";
 //Global Variables
 const USGS_API_REQUEST =
   "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=30&minlatitude=5&maxlatitude=25&minlongitude=115&maxlongitude=135";
@@ -25,15 +22,15 @@ const topIndex = document.querySelector(".top_index");
 
 //Philippine Area of Responsibility
 //5°N 115°E, 15°N 115°E, 21°N 120°E, 25°N 135°E and 5°N 135°E.
-// if (module.hot) {
-//   module.hot.accept();
-// }
+
 class Application {
   _openedTab = 0;
   _map;
   _mapEvent;
   _stationList = [];
   _earthquakeList = [];
+  _markerDict = {};
+  _htmlDict = {};
   constructor() {
     //Async handlers
     this.init();
@@ -129,10 +126,6 @@ class Application {
     return stnData;
   }
 
-  _htmlClickEventPan(e) {
-    console.log(e.latlng);
-  }
-
   async _drawMarkerMap(data_array, renderType = 1) {
     data_array.forEach(function (current) {
       let ico;
@@ -149,49 +142,65 @@ class Application {
             ico = app._stn3Marker;
             break;
         }
-        L.marker([long, lat], {
+        app._markerDict[code] = L.marker([long, lat], {
+          id: code,
           icon: ico,
           title: `${code}: ${ln}`,
         })
           .addTo(app._map)
           .bindPopup(L.popup({}))
-          .setPopupContent(`${code}: ${ln}`);
-        // .on("click", (e) => this._htmlClickEventPan(e));
+          .setPopupContent(`${code}: ${ln}`)
+          .on("click", (e) => app._panToHTML(e.target.options.id, 1));
       }
       if (renderType === 2) {
         //earthquakes
-        const { mag, magType, title, place } = current.properties;
+        const { mag, magType, title, place, code } = current.properties;
         const [lat, long, depth] = current.geometry.coordinates;
         const marker = L.icon({
           iconUrl: "./img/epicenter.png",
           iconSize: app._computeMagnitudeImage(mag),
         });
-        L.marker([long, lat], {
+        app._markerDict[code] = L.marker([long, lat], {
+          id: code,
           icon: marker,
           title: `${mag}${magType} - ${place}`,
         })
           .addTo(app._map)
           .bindPopup(L.popup({}))
-          .setPopupContent(`${title}`);
+          .setPopupContent(`${title}`)
+          .on("click", (e) => app._panToHTML(e.target.options.id, 0));
       }
     });
     return;
+  }
+
+  _panToHTML(id, tab) {
+    console.log(id, tab);
+    const [element] = document.querySelectorAll(`[data-code="${id}"]`);
+    if (!this._openedTab == tab) this._tabSwap(tab);
+    console.log(element);
+    element.scrollIntoView();
+    element.style.opacity = 1;
+    element.style.boxShadow = "15px 15px 5px 199px rgba(255,250,111,1) inset";
+    setTimeout(() => {
+      element.removeAttribute("style");
+    }, 1000);
   }
   async _drawStationHTML(stationlist) {
     stationlist.forEach(function (stn_object) {
       const { code, long_name: ln, type, long, lat } = stn_object;
       const html = `              
-      <li class="card station ${type}" data-code="${code}">
+      <li class="card station ${type}" data-code="${code}" data-long='${long}' data-lat='${lat}'>
         <h2 class="station__name">${code}</h2>
           <div class="station__type">${type}</div>
             <h3 class="station__longname">${ln}</h3>
               <div class="station__coordinates">
         <span class="coordinates">
-        ${long}, ${lat} <span class="emoji">🗺️</span></span>
+        ${long}, ${lat} <span class="emoji" data-function='location'>🗺️</span></span>
       </div>
     </li>`;
 
-      stationCards.insertAdjacentHTML("beforeend", html);
+      app._htmlDict[code] = stationCards.insertAdjacentHTML("beforeend", html);
       return;
     });
   }
@@ -203,15 +212,31 @@ class Application {
   }
 
   _cardClickHandler(e) {
+    console.log(e.target);
     if (!e.target.closest(".card")) return;
     const currentTab = this._openedTab;
     const clickedCard = e.target.closest(".card");
+
+    if (e.target.dataset.function) {
+      const activity = e.target.dataset.function;
+      let toOpen;
+      if (activity === "location") {
+        toOpen = `https://www.google.com/maps/place/@${clickedCard.dataset.long},${clickedCard.dataset.lat},15z`;
+      }
+      if (activity === "url") {
+        toOpen = clickedCard.dataset.url;
+      }
+      window.open(toOpen, "_blank");
+    }
+
     if (currentTab === 1) {
       const stationID = this._stationList.find(({ code }) => {
         return code === clickedCard.dataset.code;
       });
       this._moveToCoordinates([stationID.long, stationID.lat], 9);
+      return;
     }
+
     if (currentTab === 0) {
       console.log(this._earthquakeList);
       const earthquakeID = this._earthquakeList.find((current) => {
@@ -220,6 +245,7 @@ class Application {
       console.log(earthquakeID);
       const [lat, long, _] = earthquakeID.geometry.coordinates;
       this._moveToCoordinates([long, lat], 9);
+      return;
     }
     //0 - earthquakes, 1 - stations, 2- calculator
   }
@@ -249,7 +275,7 @@ class Application {
         current.properties;
       const [lat, long, depth] = current.geometry.coordinates;
       const html = `              
-      <li class="card earthquake" data-code=${code}>
+      <li class="card earthquake" data-code=${code} data-long='${long}' data-lat='${lat}' data-url='${url}'>
       <h1 class="earthquake__magnitude">${mag} ${magType}</h1>
       <h2 class="earthquake__place">${place}</h2>
       <div class=>${
@@ -258,44 +284,44 @@ class Application {
       <h3 class="earthquake__datetime">${new Date(time)}</h3>
       <div class='coordinates'>
         <span class="coord">${lat}, ${long}, ${depth}km deep</span>
-        <span class="emoji">🗺️</span>
-        <span class="emoji">🌐</span>
+        <span class="emoji" data-function='location'>🗺️</span>
+        <span class="emoji" data-function='url'>🌐</span>
       </div>`;
 
-      earthquakeCards.insertAdjacentHTML("beforeend", html);
+      app._htmlDict[code] = earthquakeCards.insertAdjacentHTML(
+        "beforeend",
+        html
+      );
       return;
     });
   }
   _tabSwitch(e) {
+    console.log(e.target);
+    if (!e.target.dataset.tabindex) {
+      const [lat, long, zoom] = PHILIPPINE_CENTER;
+      this._moveToCoordinates([lat, long], zoom);
+      return;
+    }
     const selector = e.target.dataset.tabindex;
+    this._tabSwap(selector, e.target);
+  }
+  _tabSwap(selector) {
     this._openedTab = +selector;
     const tabs = document.querySelectorAll(".tabselection");
     const cardDivs = document.querySelectorAll(".card_block");
     tabs.forEach((current) => {
       current.classList.remove("selected");
     });
-    e.target.classList.add("selected");
+    tabs[+selector].classList.add("selected");
     cardDivs.forEach((current) => {
       current.classList.add("hidden");
       console.log(current);
-      if (current.dataset.id === selector) current.classList.remove("hidden");
+      if (current.dataset.id == selector) current.classList.remove("hidden");
     });
   }
-  _openGoogleMaps(coords) {}
 }
-
-// class Station {
-//   constructor(object) {
-//       const {this.}
-//   }
-// }
 
 const app = new Application();
 
 // app._getJSON(STATION_REQUEST);
 // app._getJSON(USGS_API_REQUEST);
-
-// cardWindow.addEventListener("click", function (e) {
-//   if (!e.target.closest(".card")) return;
-//   console.log(e.target.closest(".card"));
-// });
