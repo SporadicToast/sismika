@@ -17,7 +17,7 @@
 	<li>Shows relative positions of Philippine Seismic Network Stations on the map</li>
 	<li>(TBA) An EWS calculator that estimates how many seconds (from detection of P-wave and the propagation of S-wave) your location has to prepare before a seismic event is detected and arrives</li>
 	</ol>
-	<a href='https://sporadictoast.github.io/sismika/'><h2>Access through here</h2></a>
+	<h2><a href='https://sporadictoast.github.io/sismika/'>Access through here</a></h2>
  <h2>Licenses</h2>
 	This repository and code is under the Apache 2.0 license, read more <a href='https://github.com/SporadicToast/sismika/blob/main/LICENSE'>here</a>.
 	<h2>Contributions</h2>
