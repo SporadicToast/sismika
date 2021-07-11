@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sismika | philippine seismic tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-height, initial-scale = 1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?" />
+    <script defer type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="index">
+        <div class="top_index">
+          <img class="logo" src="./img/logo.png" />
+          <button class="tabselection selected" data-tabIndex="0">
+            Latest Earthquakes
+          </button>
+          <button class="tabselection" data-tabIndex="1">
+            Seismic Stations
+          </button>
+          <button class="tabselection" data-tabIndex="2">
+            Early Warning Calculator
+          </button>
+        </div>
+        <div class="bottom_index">
+          <ul class="card_display">
+            <span
+              class="card_block monitoring_stations hidden"
+              data-block="stations"
+              data-id="1"
+              id="station_cards"
+            >
+              <!-- <li class="card station unmanned" data-code="ABP">
+                <h2 class="station__name">ABPP</h2>
+                <div class="station__type">STSS</div>
+                <h3 class="station__longname">Abucay, Bataan</h3>
+                <div class="station__coordinates">
+                  <span class="coordinates">14.72131, 120.5348 <span class="emoji">🗺️</span></span>
+                </div>
+              </li> -->
+            </span>
+            <span
+              class="card_block monitoring_stations"
+              data-block="earthquakes"
+              id="earthquake_cards"
+              data-id="0"
+            >
+              <!-- <li class="card earthquake" data-code="us6000etk5">
+                <h1 class="earthquake__magnitude">5.3 mb</h1>
+                <h2 class="earthquake__place">12 km NW of Dipolog, Philippines</h2>
+                <div class=>No tsunami warning</div>
+                <h3 class="earthquake__datetime">Sat Jul 10 2021 23:02:33 GMT+0800 (China Standard Time)</h3>
+                <div class='coordinates'>
+                  <span class="coord">123.2506, 8.6424, 10km</span>
+                  <span class="emoji">🗺️</span>
+                  <span class="emoji">🌐</span>
+                </div>
+              </li> -->
+            </span>
+          </ul>
+          (c) Marc Macaraeg
+        </div>
+      </div>
+      <div class="map" id="map"></div>
+    </div>
+  </body>
+</html>

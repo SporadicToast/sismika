@@ -1,0 +1,737 @@
+[
+    {
+      "code": "ABPP",
+      "long_name": "Abucay, Bataan",
+      "type": "STSS",
+      "long": 14.72131,
+      "lat": 120.53487
+    },
+    {
+      "code": "ABRA",
+      "long_name": "Dolores, Abra",
+      "type": "STSS",
+      "long": 17.64905,
+      "lat": 120.70863
+    },
+    {
+      "code": "AIQP",
+      "long_name": "Alabat Island, Quezon",
+      "type": "STSS",
+      "long": 14.11667,
+      "lat": 122.05
+    },
+    {
+      "code": "APYP",
+      "long_name": "Conner, Apayao",
+      "type": "STSS",
+      "long": 17.74953,
+      "lat": 121.3053
+    },
+    {
+      "code": "AUQP",
+      "long_name": "San Andres, Quezon",
+      "type": "STSS",
+      "long": 13.3235,
+      "lat": 122.67745
+    },
+    {
+      "code": "BALP",
+      "long_name": "Baler, Aurora",
+      "type": "STSS",
+      "long": 15.73449,
+      "lat": 121.58603
+    },
+    {
+      "code": "BATP",
+      "long_name": "Brooke's Point, Palawan",
+      "type": "STSS",
+      "long": 8.7736,
+      "lat": 117.83898
+    },
+    {
+      "code": "BBPS",
+      "long_name": "Basco, Batanes",
+      "type": "STSS",
+      "long": 20.5,
+      "lat": 121.9
+    },
+    {
+      "code": "BESP",
+      "long_name": "Borongan, Eastern Samar",
+      "type": "STSS",
+      "long": 11.60858,
+      "lat": 125.43533
+    },
+    {
+      "code": "BLNP",
+      "long_name": "Bacolod, Lanao del Norte",
+      "type": "STSS",
+      "long": 8.19008,
+      "lat": 124.02399
+    },
+    {
+      "code": "BOAC",
+      "long_name": "Boac, Marinduque",
+      "type": "STSS",
+      "long": 13.44692,
+      "lat": 121.8416
+    },
+    {
+      "code": "BOLP",
+      "long_name": "Bolinao, Pangasinan",
+      "type": "STSS",
+      "long": 16.41653,
+      "lat": 119.85935
+    },
+    {
+      "code": "BTTP",
+      "long_name": "Bongao, Tawi-Tawi",
+      "type": "STSS",
+      "long": 5.02897,
+      "lat": 119.77131
+    },
+    {
+      "code": "BUKP",
+      "long_name": "Valencia, Bukidnon",
+      "type": "STSS",
+      "long": 7.90288,
+      "lat": 125.0898
+    },
+    {
+      "code": "BUSP",
+      "long_name": "Busuanga, Palawan",
+      "type": "STSS",
+      "long": 12.13321,
+      "lat": 119.93614
+    },
+    {
+      "code": "BUTP",
+      "long_name": "Butuan City, Agusan Del Norte",
+      "type": "STSS",
+      "long": 8.94459,
+      "lat": 125.50289
+    },
+    {
+      "code": "CAAP",
+      "long_name": "Casiguran, Aurora",
+      "type": "STSS",
+      "long": 16.27704,
+      "lat": 122.12333
+    },
+    {
+      "code": "CADP",
+      "long_name": "Cadiz City, Negros Occidental",
+      "type": "STSS",
+      "long": 10.95665,
+      "lat": 123.3057
+    },
+    {
+      "code": "CAUP",
+      "long_name": "Cauayan, Isabela",
+      "type": "STSS",
+      "long": 16.9335,
+      "lat": 121.77439
+    },
+    {
+      "code": "CDOP",
+      "long_name": "Cateel, Davao Oriental",
+      "type": "STSS",
+      "long": 7.81008,
+      "lat": 126.39849
+    },
+    {
+      "code": "CICP",
+      "long_name": "Calayan Island, Cagayan",
+      "type": "STSS",
+      "long": 19.3185,
+      "lat": 121.45683
+    },
+    {
+      "code": "CNOP",
+      "long_name": "Candoni, Negros Occidental",
+      "type": "STSS",
+      "long": 9.83068,
+      "lat": 122.64296
+    },
+    {
+      "code": "CNPS",
+      "long_name": "Catarman, Northern Samar",
+      "type": "STSS",
+      "long": 12.49526,
+      "lat": 124.64014
+    },
+    {
+      "code": "CUYO",
+      "long_name": "Cuyo, Palawan",
+      "type": "STSS",
+      "long": 10.84868,
+      "lat": 121.01379
+    },
+    {
+      "code": "DACP",
+      "long_name": "Dalagueta, Cebu",
+      "type": "STSS",
+      "long": 9.7612,
+      "lat": 123.5349
+    },
+    {
+      "code": "DDMP",
+      "long_name": "Don Marcelino, Davao del Sur",
+      "type": "STSS",
+      "long": 6.15943,
+      "lat": 125.71991
+    },
+    {
+      "code": "ENPP",
+      "long_name": "El Nido, Palawan",
+      "type": "STSS",
+      "long": 11.18001,
+      "lat": 119.39048
+    },
+    {
+      "code": "GHBP",
+      "long_name": "Garcia Hernandez, Bohol",
+      "type": "STSS",
+      "long": 9.61379,
+      "lat": 124.29572
+    },
+    {
+      "code": "GLSP",
+      "long_name": "General Luna, Surgiao del Norte",
+      "type": "STSS",
+      "long": 9.79809,
+      "lat": 126.12725
+    },
+    {
+      "code": "GNOP",
+      "long_name": "Guihulngan City",
+      "type": "STSS",
+      "long": 10.1196,
+      "lat": 123.27387
+    },
+    {
+      "code": "GNQP",
+      "long_name": "General Nakar, Quezon",
+      "type": "STSS",
+      "long": 14.94482,
+      "lat": 121.5182
+    },
+    {
+      "code": "GUIM",
+      "long_name": "Jordan, Guimaras",
+      "type": "STSS",
+      "long": 10.66117,
+      "lat": 122.59096
+    },
+    {
+      "code": "IBZP",
+      "long_name": "Iba, Zambales",
+      "type": "STSS",
+      "long": 15.32646,
+      "lat": 119.9801
+    },
+    {
+      "code": "IPIL",
+      "long_name": "Ipil, Zamboanga Sibugay",
+      "type": "STSS",
+      "long": 7.78282,
+      "lat": 122.58689
+    },
+    {
+      "code": "JCNP",
+      "long_name": "Jose Panganiban, Camarines Norte",
+      "type": "STSS",
+      "long": 14.2899,
+      "lat": 122.69177
+    },
+    {
+      "code": "LBLP",
+      "long_name": "Los Baños, Laguna",
+      "type": "STSS",
+      "long": 14.15478,
+      "lat": 121.22271
+    },
+    {
+      "code": "LCVP",
+      "long_name": "Laak, Compostela Valley",
+      "type": "STSS",
+      "long": 7.81641,
+      "lat": 125.79082
+    },
+    {
+      "code": "LDIP",
+      "long_name": "Loreto, Dinagat Islands",
+      "type": "STSS",
+      "long": 10.35925,
+      "lat": 125.57937
+    },
+    {
+      "code": "LSIP",
+      "long_name": "Lazi, Siquijor",
+      "type": "STSS",
+      "long": 9.07102,
+      "lat": 123.6191
+    },
+    {
+      "code": "LUBP",
+      "long_name": "Lubang, Occidental Mindoro",
+      "type": "STSS",
+      "long": 13.85914,
+      "lat": 120.12292
+    },
+    {
+      "code": "MACP",
+      "long_name": "Maragondon, Cavite",
+      "type": "STSS",
+      "long": 14.27376,
+      "lat": 120.7362
+    },
+    {
+      "code": "MARP",
+      "long_name": "Marawi City, Lanao del Sur",
+      "type": "STSS",
+      "long": 8.00462,
+      "lat": 124.2854
+    },
+    {
+      "code": "MATI",
+      "long_name": "Mati City, Davao Oriental",
+      "type": "STSS",
+      "long": 6.61001,
+      "lat": 126.2676
+    },
+    {
+      "code": "MECP",
+      "long_name": "Medellin, Cebu",
+      "type": "STSS",
+      "long": 11.12766,
+      "lat": 123.96216
+    },
+    {
+      "code": "MSLP",
+      "long_name": "Maasin, Sourthern Leyte",
+      "type": "STSS",
+      "long": 10.1654,
+      "lat": 124.8403
+    },
+    {
+      "code": "OCLP",
+      "long_name": "Ormoc City, Leyte",
+      "type": "STSS",
+      "long": 11.00465,
+      "lat": 124.60888
+    },
+    {
+      "code": "OTRP",
+      "long_name": "Odiongan, Romblon",
+      "type": "STSS",
+      "long": 12.42265,
+      "lat": 121.97134
+    },
+    {
+      "code": "PACP",
+      "long_name": "Pampalona, Cagayan",
+      "type": "STSS",
+      "long": 18.4266,
+      "lat": 121.3313
+    },
+    {
+      "code": "PAGZ",
+      "long_name": "Pagadian City, Zambaonga del Sur",
+      "type": "STSS",
+      "long": 7.8397,
+      "lat": 123.4343
+    },
+    {
+      "code": "PAKP",
+      "long_name": "Pakil, Laguna",
+      "type": "STSS",
+      "long": 14.38933,
+      "lat": 121.49645
+    },
+    {
+      "code": "PALP",
+      "long_name": "Palanan, Isabela",
+      "type": "STSS",
+      "long": 17.06287,
+      "lat": 122.42927
+    },
+    {
+      "code": "PICP",
+      "long_name": "Pikit, Cotobato",
+      "type": "STSS",
+      "long": 7.0531,
+      "lat": 124.6193
+    },
+    {
+      "code": "POLP",
+      "long_name": "Polillo, Quezon",
+      "type": "STSS",
+      "long": 14.71446,
+      "lat": 121.93809
+    },
+    {
+      "code": "PVCP",
+      "long_name": "Virac, Catanduanes",
+      "type": "STSS",
+      "long": 13.58082,
+      "lat": 124.23106
+    },
+    {
+      "code": "RTBP",
+      "long_name": "Doña Remedios Trinidas, Bulacan",
+      "type": "STSS",
+      "long": 15.11427,
+      "lat": 121.21685
+    },
+    {
+      "code": "SAMP",
+      "long_name": "Sagada, Mountain Province",
+      "type": "STSS",
+      "long": 17.08521,
+      "lat": 120.89898
+    },
+    {
+      "code": "SCSP",
+      "long_name": "San Jose, Camarines Sur",
+      "type": "STSS",
+      "long": 13.69817,
+      "lat": 123.51813
+    },
+    {
+      "code": "SCZP",
+      "long_name": "Sta, Cruz, Zambales",
+      "type": "STSS",
+      "long": 15.7631,
+      "lat": 119.90954
+    },
+    {
+      "code": "SFCP",
+      "long_name": "San Franciso, Cebu",
+      "type": "STSS",
+      "long": 10.6472,
+      "lat": 124.3532
+    },
+    {
+      "code": "SGCP",
+      "long_name": "Gonzaga, Cagayan",
+      "type": "STSS",
+      "long": 18.2612,
+      "lat": 121.99665
+    },
+    {
+      "code": "SJMP",
+      "long_name": "San Jose, Occidental Mindoro",
+      "type": "STSS",
+      "long": 12.35298,
+      "lat": 121.06631
+    },
+    {
+      "code": "SKMP",
+      "long_name": "Bagumbayan, Sultan Kudarat",
+      "type": "STSS",
+      "long": 6.53341,
+      "lat": 124.56378
+    },
+    {
+      "code": "SMPP",
+      "long_name": "San Manuel, Pangasinan",
+      "type": "STSS",
+      "long": 16.06438,
+      "lat": 120.66818
+    },
+    {
+      "code": "SZP",
+      "long_name": "Santa, Ilocos Sur",
+      "type": "STSS",
+      "long": 17.48599,
+      "lat": 120.43454
+    },
+    {
+      "code": "TABP",
+      "long_name": "Talibon, Bohol",
+      "type": "STSS",
+      "long": 10.14918,
+      "lat": 124.32483
+    },
+    {
+      "code": "TASP",
+      "long_name": "Talacogon, Agusan del Sur",
+      "type": "STSS",
+      "long": 8.42021,
+      "lat": 125.80496
+    },
+    {
+      "code": "TIRP",
+      "long_name": "Talim Island, Rizal",
+      "type": "STSS",
+      "long": 14.35472,
+      "lat": 121.22929
+    },
+    {
+      "code": "TSSP",
+      "long_name": "Tandag, Surigao Del Sur",
+      "type": "STSS",
+      "long": 9.07998,
+      "lat": 126.19746
+    },
+    {
+      "code": "BBP",
+      "long_name": "Basco, Batanes",
+      "type": "SCSS",
+      "long": 20.5,
+      "lat": 121.9
+    },
+    {
+      "code": "BCP",
+      "long_name": "Baguio City, Benguet",
+      "type": "SCSS",
+      "long": 16.41201,
+      "lat": 120.59339
+    },
+    {
+      "code": "BIP",
+      "long_name": "Bislig City, Surgiao del Sur",
+      "type": "SCSS",
+      "long": 8.2101,
+      "lat": 126.2848
+    },
+    {
+      "code": "CGP",
+      "long_name": "Cagayan de Oro City, Misamis Oriental",
+      "type": "SCSS",
+      "long": 8.50701,
+      "lat": 124.76208
+    },
+    {
+      "code": "CTB",
+      "long_name": "Cotobato City, Bangsamoro",
+      "type": "SCSS",
+      "long": 7.2047,
+      "lat": 124.231
+    },
+    {
+      "code": "CVP",
+      "long_name": "Peñablanca, Cagayan",
+      "type": "SCSS",
+      "long": 17.6627,
+      "lat": 121.9473
+    },
+    {
+      "code": "DCP",
+      "long_name": "Dipolog City, Zamboanga del Norte",
+      "type": "SCSS",
+      "long": 8.58641,
+      "lat": 123.34494
+    },
+    {
+      "code": "DMP",
+      "long_name": "Davao City, Davao del Sur",
+      "type": "SCSS",
+      "long": 6.69837,
+      "lat": 125.36121
+    },
+    {
+      "code": "GQP",
+      "long_name": "Guinayangan, Quezon",
+      "type": "SCSS",
+      "long": 13.89638,
+      "lat": 122.45219
+    },
+    {
+      "code": "GSP",
+      "long_name": "General Santos City, South Cotobato",
+      "type": "SCSS",
+      "long": 6.1164,
+      "lat": 125.1716
+    },
+    {
+      "code": "IAP",
+      "long_name": "Ibajay, Aklan",
+      "type": "SCSS",
+      "long": 11.80574,
+      "lat": 122.15866
+    },
+    {
+      "code": "JAP",
+      "long_name": "San Jose de Buenavista, Antique",
+      "type": "SCSS",
+      "long": 10.74335,
+      "lat": 121.94388
+    },
+    {
+      "code": "KCP",
+      "long_name": "Kidapawan City, Cotobato",
+      "type": "SCSS",
+      "long": 7.0106,
+      "lat": 125.0911
+    },
+    {
+      "code": "LLP",
+      "long_name": "Lapu-Lapu City, Cebu",
+      "type": "SCSS",
+      "long": 10.30304,
+      "lat": 123.98631
+    },
+    {
+      "code": "LQP",
+      "long_name": "Lucban, Quezon",
+      "type": "SCSS",
+      "long": 14.1144,
+      "lat": 121.55486
+    },
+    {
+      "code": "MMP",
+      "long_name": "Masbate City, Masbate",
+      "type": "SCSS",
+      "long": 12.37109,
+      "lat": 123.62392
+    },
+    {
+      "code": "PCP",
+      "long_name": "Palayan City, Nueva Ecija",
+      "type": "SCSS",
+      "long": 15.4977,
+      "lat": 121.10774
+    },
+    {
+      "code": "PGP",
+      "long_name": "Puerto Galera, Oriental Mindoro",
+      "type": "SCSS",
+      "long": 13.42107,
+      "lat": 120.9279
+    },
+    {
+      "code": "PIP",
+      "long_name": "Pasuquin, Ilocos Norte",
+      "type": "SCSS",
+      "long": 18.33398,
+      "lat": 120.61949
+    },
+    {
+      "code": "PLP",
+      "long_name": "Palo, Leyte",
+      "type": "SCSS",
+      "long": 11.16008,
+      "lat": 124.99011
+    },
+    {
+      "code": "PPR",
+      "long_name": "Puerto Princesa, Palawan",
+      "type": "SCSS",
+      "long": 9.7376,
+      "lat": 118.73504
+    },
+    {
+      "code": "QVP",
+      "long_name": "Quezon City, NCR",
+      "type": "SCSS",
+      "long": 14.65099,
+      "lat": 121.04862
+    },
+    {
+      "code": "RCP",
+      "long_name": "Roxas City, Capiz",
+      "type": "SCSS",
+      "long": 11.62494,
+      "lat": 122.73952
+    },
+    {
+      "code": "SCP",
+      "long_name": "Surigao City, Surigao del Norte",
+      "type": "SCSS",
+      "long": 9.79055,
+      "lat": 125.49334
+    },
+    {
+      "code": "SIP",
+      "long_name": "Sinait, Ilocos Sur",
+      "type": "SCSS",
+      "long": 17.86643,
+      "lat": 120.45616
+    },
+    {
+      "code": "SNP",
+      "long_name": "Sibulan, Negros Oriental",
+      "type": "SCSS",
+      "long": 9.35888,
+      "lat": 123.28524
+    },
+    {
+      "code": "TBP",
+      "long_name": "Tagbilaran City, Bohol",
+      "type": "SCSS",
+      "long": 9.64055,
+      "lat": 123.85658
+    },
+    {
+      "code": "TGY",
+      "long_name": "Tagaytay City, Cavite",
+      "type": "SCSS",
+      "long": 14.29996,
+      "lat": 120.95777
+    },
+    {
+      "code": "ZCP",
+      "long_name": "Zamboanga City, Zamboanga del Sur",
+      "type": "SCSS",
+      "long": 7.9043,
+      "lat": 123.3194
+    },
+    {
+      "code": "BVO",
+      "long_name": "Bulusan Volcano Observatory",
+      "type": "VS",
+      "long": 12.7692,
+      "lat": 124.0567
+    },
+    {
+      "code": "GSO",
+      "long_name": "Matutum and Parker Volcano Observatory",
+      "type": "VS",
+      "long": 6.3606,
+      "lat": 125.0747
+    },
+    {
+      "code": "HVO",
+      "long_name": "Hibok-Hibok Volcano Observatory",
+      "type": "VS",
+      "long": 9.22719,
+      "lat": 124.70799
+    },
+    {
+      "code": "KVO",
+      "long_name": "Kanlaon Volcano Observatory",
+      "type": "VS",
+      "long": 10.4116,
+      "lat": 123.133
+    },
+    {
+      "code": "MVO",
+      "long_name": "Mayon Volcano Observatory",
+      "type": "VS",
+      "long": 13.2548,
+      "lat": 123.6861
+    },
+    {
+      "code": "PVO",
+      "long_name": "Pinatubo Volcano Observatory",
+      "type": "VS",
+      "long": 15.1429,
+      "lat": 120.3496
+    },
+    {
+      "code": "TVO",
+      "long_name": "Taal Volcano Observatory",
+      "type": "VS",
+      "long": 14.08456,
+      "lat": 120.98662
+    },
+    {
+      "code": "VIRI",
+      "long_name": "Iriga Volcano Station",
+      "type": "VS",
+      "long": 13.455,
+      "lat": 123.4581
+    }
+  ]

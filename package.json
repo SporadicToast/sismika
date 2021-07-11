@@ -1,0 +1,17 @@
+{
+  "name": "sismika_ph",
+  "version": "0.0.1",
+  "description": "seismic API connection with USGS with PAGASA stations",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Marc Macaraeg",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}
