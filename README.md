@@ -23,5 +23,5 @@
 	<h2>Contributions</h2>
 	Contributions are welcome, however, I recommend a fork to be done to streamline pull requests.
 	<h2>Open Source Licenses</h2>
-	<a href='https://www.phivolcs.dost.gov.ph/index.php/earthquake/earthquake-monitoring'>DOST - The Philippine Seismic Network</a>
+	<a href='https://www.phivolcs.dost.gov.ph/index.php/earthquake/earthquake-monitoring'>DOST - The Philippine Seismic Network</a><br>
 	<a href='https://earthquake.usgs.gov/fdsnws/event/1/'>United States Geological Service API</a>
