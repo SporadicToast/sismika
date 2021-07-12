@@ -1,5 +1,9 @@
 "use strict";
 //Global Variables
+const THIS_VERSION = "v1.02 Himawari";
+
+//Version handler
+document.getElementById("version_number").textContent = THIS_VERSION;
 const USGS_API_REQUEST =
   "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&limit=30&minlatitude=5&maxlatitude=25&minlongitude=115&maxlongitude=135";
 const STATION_REQUEST = "./var/seismic_stn.json";
