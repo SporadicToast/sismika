@@ -190,8 +190,11 @@ class Application {
     console.log(id, tab);
     const [element] = document.querySelectorAll(`[data-code="${id}"]`);
     if (!this._openedTab == tab) this._tabSwap(tab);
-    console.log(element);
-    element.scrollIntoView();
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "start",
+    });
     element.style.opacity = 1;
     element.style.boxShadow = "15px 15px 5px 199px rgba(255,250,111,1) inset";
     setTimeout(() => {
